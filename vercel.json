@@ -1,5 +1,4 @@
 {
-  "name": "instances",
   "buildCommand": "yarn build",
   "outputDirectory": "dist",
   "framework": "vite",
