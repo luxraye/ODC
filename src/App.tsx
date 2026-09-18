@@ -6,7 +6,6 @@ import { LoginPage } from './components/login/LoginPage';
 import { AnticipationView } from './components/anticipation/AnticipationView';
 import { ResponseView } from './components/response/ResponseView';
 import { AdminView } from './components/admin/AdminView';
-import { Track2Roadmap } from './components/roadmap/Track2Roadmap';
 import { Lock, X, KeyRound, Sparkles, ArrowRight, ShieldCheck, HeartPulse } from 'lucide-react';
 
 export const App: React.FC = () => {
@@ -46,7 +45,6 @@ export const App: React.FC = () => {
         {currentRole === 'anticipation' && <AnticipationView />}
         {currentRole === 'response' && <ResponseView />}
         {currentRole === 'admin' && <AdminView />}
-        {currentRole === 'roadmap' && <Track2Roadmap />}
       </main>
 
       {/* Footer */}
@@ -61,12 +59,6 @@ export const App: React.FC = () => {
 
           <div className="flex items-center gap-4 text-slate-400">
             <span>OSCB Hackathon 2026 Gaborone</span>
-            <button
-              onClick={() => setRole('roadmap')}
-              className="text-cyan-400 hover:underline"
-            >
-              OS Integration Map
-            </button>
             <button
               onClick={() => setShowAdminAuthModal(true)}
               className="text-amber-400 hover:underline flex items-center gap-1"

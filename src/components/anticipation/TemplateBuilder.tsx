@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
-import { MatrixCell, CommunityTemplate } from '../../types';
-import { Code, Save, X, Sparkles, Check, AlertTriangle, FileCode, Copy, Layers, Cpu, ShieldCheck, Share2 } from 'lucide-react';
+import { MatrixCell } from '../../types';
+import { Code, Save, X, Sparkles, Check, AlertTriangle, FileCode, Copy, Layers, Cpu, ShieldCheck } from 'lucide-react';
 
 const STARTER_SNIPPETS: { label: string; description: string; json: MatrixCell }[] = [
   {
@@ -193,37 +193,6 @@ export const TemplateBuilder: React.FC<{ onClose: () => void }> = ({ onClose }) 
     onClose();
   };
 
-  const handlePublishToTrack2 = () => {
-    const template = getParsedTemplate();
-    if (!template) return;
-
-    // Deploy locally first
-    addCustomTemplate(template);
-
-    // Also publish to Community Hub
-    const communityEntry: CommunityTemplate = {
-      id: `comm-pub-${Date.now().toString().slice(-4)}`,
-      title: template.name,
-      author: 'Local Security Architect',
-      organization: template.targetProfile,
-      category: template.col === 'C' ? 'Healthcare' : template.row === 2 ? 'Education' : 'General',
-      matrixTier: `${template.col}${template.row}`,
-      rating: 5.0,
-      utilityScore: 96,
-      upvotes: 1,
-      downloads: 1,
-      verified: true,
-      description: template.tagline || `Zero-trust protection profile for ${template.targetProfile}`,
-      capabilitiesSupported: ['Custom JSON Schema', 'Ringfencing Pro', 'Open-Source Signals'],
-      tags: ['custom-json', 'track2', 'botswana-sec'],
-      createdAt: 'Just now',
-    };
-
-    publishToCommunity(communityEntry);
-    onClose();
-    setRole('roadmap');
-  };
-
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm overflow-y-auto">
       <div className="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-5xl p-6 shadow-2xl my-6 space-y-5">
@@ -354,23 +323,14 @@ export const TemplateBuilder: React.FC<{ onClose: () => void }> = ({ onClose }) 
               </div>
             </div>
 
-            <div className="pt-2 border-t border-slate-800 space-y-2">
+            <div className="pt-2 border-t border-slate-800">
               <button
                 type="button"
                 onClick={handleDeploy}
                 className="w-full py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold font-sans text-xs flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-500/20"
               >
                 <Save className="w-4 h-4" />
-                <span>Deploy to Local Matrix</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={handlePublishToTrack2}
-                className="w-full py-2.5 px-4 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold font-sans text-xs flex items-center justify-center gap-2 transition-all shadow-md shadow-purple-600/30"
-              >
-                <Share2 className="w-4 h-4" />
-                <span>Publish to Track 2 Community Hub</span>
+                <span>Deploy to Active Matrix</span>
               </button>
             </div>
           </div>

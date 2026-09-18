@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApp } from '../../context/AppContext';
-import { Shield, Radio, FileCheck, Terminal, Map, RotateCcw, ArrowRight, ArrowLeft, LogOut, Zap } from 'lucide-react';
+import { Shield, Radio, FileCheck, Terminal, Map, RotateCcw, ArrowRight, ArrowLeft, LogOut } from 'lucide-react';
 import { Role } from '../../types';
 
 export const Navbar: React.FC = () => {
@@ -11,7 +11,6 @@ export const Navbar: React.FC = () => {
   const navItems: { role: Role; label: string; icon: React.ReactNode; badge?: string; badgeColor?: string }[] = [
     { role: 'anticipation', label: 'Threat Anticipation', icon: <Radio className="w-4 h-4" />, badge: 'A1-C3' },
     { role: 'response', label: 'Threat Response', icon: <FileCheck className="w-4 h-4" />, badge: 'Evidence' },
-    { role: 'roadmap', label: 'Track 2 Hub', icon: <Zap className="w-4 h-4 text-purple-400" />, badge: 'COMMUNITY', badgeColor: 'bg-purple-500/20 text-purple-300 border border-purple-500/30' },
     { role: 'admin', label: 'Admin Telemetry', icon: <Terminal className="w-4 h-4" /> },
   ];
 

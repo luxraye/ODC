@@ -29,23 +29,14 @@ export const LandingPage: React.FC = () => {
           Simple, customizable cyber protection that adopts and scales to your needs — without the enterprise price tag or technical headache.
         </p>
 
-        {/* Primary Action Buttons */}
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        {/* Primary Action Button */}
+        <div className="mt-8 flex items-center justify-center">
           <button
             onClick={() => setRole('login')}
             className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-bold text-sm flex items-center justify-center gap-2.5 transition-all shadow-xl shadow-emerald-500/25 hover:scale-[1.02]"
           >
             <span>Get Started / Sign In</span>
             <ArrowRight className="w-4 h-4" />
-          </button>
-
-          <button
-            onClick={() => setRole('roadmap')}
-            className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-850 text-slate-200 hover:text-white border border-slate-800 text-xs font-mono flex items-center justify-center gap-2 transition-all group"
-          >
-            <Zap className="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform" />
-            <span>Explore Track 2 (Community & Advanced)</span>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
           </button>
         </div>
 
@@ -60,97 +51,6 @@ export const LandingPage: React.FC = () => {
           <span className="px-3.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center gap-2">
             <Server className="w-3.5 h-3.5 text-amber-400" /> Local Businesses & Municipal Councils
           </span>
-        </div>
-      </section>
-
-      {/* Track 1 vs Track 2 Roadmap Showcase */}
-      <section className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-8">
-          <span className="text-xs font-mono uppercase text-emerald-400 tracking-wider">Product Roadmap</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-1">
-            Two Strategic Tracks of Innovation
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-400 mt-1 max-w-xl mx-auto">
-            Delivering an immediate production-grade defense core today while charting community ecosystem development for tomorrow.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Track 1 Box */}
-          <div className="p-6 rounded-2xl bg-gradient-to-b from-slate-900 via-slate-900/90 to-slate-950 border border-emerald-500/30 space-y-4">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-mono font-bold px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
-                TRACK 1 · PRODUCTION CORE (TODAY)
-              </span>
-              <span className="text-[11px] font-mono text-slate-400">Deployed MVP</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-white">Production-Grade Defence & Triage</h3>
-              <p className="text-xs text-slate-300 mt-1.5 leading-relaxed font-sans">
-                The battle-tested foundation designed for immediate adoption by Botswana schools and clinics.
-              </p>
-            </div>
-            <ul className="space-y-2 text-xs font-mono text-slate-300 pt-2 border-t border-slate-800">
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span><strong>A1–C3 Template Matrix</strong> (Scale 1–3 × Sensitivity A–C)</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Application Allow-listing & USB Storage Ringfencing</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>1-Click <strong>Threat Simulation Playground</strong></span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Bounded Evidence Collection (Replaces AnyDesk/TeamViewer)</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Track 2 Box */}
-          <div className="p-6 rounded-2xl bg-gradient-to-b from-slate-900 via-slate-900/90 to-slate-950 border border-purple-500/30 space-y-4">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-mono font-bold px-2.5 py-1 rounded bg-purple-500/20 text-purple-300 border border-purple-500/40">
-                TRACK 2 · THE NEXT FRONTIER (COMMUNITY & ADVANCED)
-              </span>
-              <span className="text-[11px] font-mono text-purple-400">Future Horizon</span>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-white">Instances Community Hub & Advanced Controls</h3>
-              <p className="text-xs text-slate-300 mt-1.5 leading-relaxed font-sans">
-                A public template exchange and extended zero-trust capabilities taking security beyond standard enterprise baselines.
-              </p>
-            </div>
-            <ul className="space-y-2 text-xs font-mono text-slate-300 pt-2 border-t border-slate-800">
-              <li className="flex items-center gap-2">
-                <Star className="w-4 h-4 text-purple-400 shrink-0" />
-                <span><strong>Instances Community Hub</strong>: Share, publish, and test public templates</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Star className="w-4 h-4 text-purple-400 shrink-0" />
-                <span><strong>Utility Ranking & Leaderboard</strong> (Scores out of 100, upvotes, validation)</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Star className="w-4 h-4 text-purple-400 shrink-0" />
-                <span><strong>Parent-Child Process Ringfencing</strong> (Block Office $\rightarrow$ PowerShell)</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Star className="w-4 h-4 text-purple-400 shrink-0" />
-                <span><strong>Just-in-Time (JIT) Elevation</strong> & Operational Mode Switching</span>
-              </li>
-            </ul>
-
-            <button
-              onClick={() => setRole('roadmap')}
-              className="mt-2 w-full py-2 rounded-xl bg-purple-600/30 hover:bg-purple-600/50 text-purple-200 border border-purple-500/40 text-xs font-mono font-bold flex items-center justify-center gap-2 transition-all"
-            >
-              <span>Explore Track 2 Hub</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
         </div>
       </section>
 
