@@ -1,241 +1,276 @@
-# INSTANCES: Master Pitch Deck Guide & Speaker Script
+# INSTANCES: Master PowerPoint Presentation Guide & Pitch Deck
 **Event:** Open Source Hackathon 2026 Botswana (UniPod · OSCB · Orange Digital Center · University of Botswana)  
 **Track:** 01 — Defence & Security  
-**Live Application URL:** [https://instances-bw.vercel.app](https://instances-bw.vercel.app)  
-**Presentation Time:** 5 Minutes (3 Min Pitch + 2 Min Q&A)
+**Theme:** *Open Ideas, Brighter Possibilities*  
+**Date:** Friday, 18 September 2026 | Orange Digital Centre, Gaborone  
+**Presentation Time:** 5 Minutes Total (3 Minutes Presentation + 2 Minutes Jury Q&A)
 
 ---
 
-## 🎯 Executive Pitch Strategy
+## 🎯 Executive Presentation Philosophy: Simplicity First
 
-The biggest trap in cybersecurity presentations is getting lost in acronyms (`IMA`, `eBPF`, `SID`, `ASLR`).  
-**Judges don't invest in acronyms; they invest in outcomes.**
-
-This pitch follows the **"Human Impact $\rightarrow$ Elegant Architecture $\rightarrow$ Live Proof $\rightarrow$ Ecosystem"** story arc:
-1. **The Ground Reality:** A nurse in Kanye clinic cannot debug Linux terminal outputs or pay thousands of dollars for proprietary American software like ThreatLocker.
-2. **The Innovation:** INSTANCES makes **Zero-Trust Default-Deny** human, customizable, and 100% open-source.
-3. **The Proof:** A live 60-second simulation of an unauthorized USB data leak blocked in real time with plain-language reassurance.
-4. **The Vision (Track 2):** A Botswana community marketplace where local developers build and rank security templates for national sovereignty.
+> **Core Rule for Presenters:** Keep the story simple, relatable, and human.  
+> Avoid alienating judges with low-level jargon upfront. Ground the problem in everyday Botswana experiences (a rural health clinic, a secondary school computer lab, a local business). Get technical *only* where required—specifically when detailing the **open-source security engines** and the **production OS integration path**.
 
 ---
 
-## 📊 Slide-by-Slide Presentation Guide
+## 📽️ Slide-by-Slide Deck Outline & Speaker Script
 
 ---
 
-### SLIDE 1: Title & The Bold Hook
+### SLIDE 1: Title & The Human Hook
 - **Slide Title:** INSTANCES
-- **Subtitle:** Zero-Trust Cyber Protection Scaled for Every Community
-- **Visual:** Clean obsidian dark backdrop, INSTANCES shield logo with glowing emerald/cyan accents, Hackathon Track 01 banner, URL: `instances-bw.vercel.app`.
+- **Tagline:** Cyber Defense Made Simple. Protection That Fits You.
+- **Visuals:** 
+  - Obsidian dark aesthetic with clean emerald trust shield icon.
+  - Event branding: *Open Source Hackathon 2026 Botswana (Track 01: Defence & Security)*.
+  - Subtitle: *A Customizable Zero-Trust & Safe Incident Response Platform*.
 - **Presenter Timing:** 0:00 – 0:30 (30 seconds)
 
 #### 🎙️ Speaker Script:
-> *"Good morning, honorable judges, mentors, and fellow innovators.  
-> Across Botswana today, we are rapidly digitizing our society — our clinics are adopting electronic health registers, our secondary schools have computer labs, and our businesses operate on digital money.  
-> But here is the silent crisis: **how do we protect these systems when enterprise cybersecurity costs hundreds of thousands of Pula, and open-source alternatives are completely inaccessible to everyday operators?**  
-> Today, we present **INSTANCES**: an open-source, human-centric trust platform that brings enterprise-grade zero-trust defense to every clinic, school, and business in Botswana."*
+> *"Good morning, honorable judges, mentors, and fellow builders.  
+> Across Botswana today, our institutions are rapidly going digital. Our district clinics use electronic health registers, our secondary schools run public IT labs, and local businesses rely on digital point-of-sale systems.  
+> But here is the critical vulnerability: **How do these vital institutions protect themselves when enterprise cybersecurity software costs hundreds of thousands of Pula, and raw open-source security tools are far too complex for everyday operators?**  
+> We built **INSTANCES**: a simple, human-centered cyber defense platform powered entirely by trusted open-source signals. It gives every school, clinic, and business enterprise-grade zero-trust protection—without the enterprise price tag or technical headache."*
 
 ---
 
 ### SLIDE 2: The Botswana Dilemma (The Problem)
-- **Slide Title:** The Security Paradox in Botswana
-- **Visual:** Split comparison graphic:
-  - *Left (Commercial Platforms):* Expensive ($$$$), closed-source, vendor lock-in, requires dedicated SOC teams.
-  - *Right (Raw Open-Source):* Linux IMA, AppArmor, Suricata, Wazuh — powerful, but fragmented, command-line only, alienating non-technical staff.
-  - *Center (The Real Victim):* Photo or icon of a rural clinic triage desk with patient queues.
-- **Key Bullet Points:**
-  - **The Cost Barrier:** Enterprise zero-trust tools are financially out of reach for public institutions.
-  - **The Usability Chasm:** A clinic nurse or schoolteacher cannot edit iptables or debug kernel logs.
-  - **The Remote Desktop Trap:** When incidents occur, staff hand over unrestricted AnyDesk/TeamViewer access to unvetted third parties — creating an even bigger security breach.
+- **Slide Title:** Why Current Security Fails Our Communities
+- **Visual Layout:** Three side-by-side challenge cards:
+  1. **The Cost Barrier (Proprietary Platforms):**  
+     Commercial solutions like ThreatLocker provide excellent zero-trust protection, but cost tens of thousands of dollars per year and require dedicated corporate IT teams. Public clinics and schools cannot afford them.
+  2. **The Usability Chasm (Raw Open-Source):**  
+     Engines like Linux IMA, AppArmor, Suricata, and Wazuh are free and immensely powerful—but they require editing low-level terminal configs, writing kernel rules, and deciphering cryptic log dumps. A clinic nurse or school teacher cannot do this.
+  3. **The Dangerous Remote Takeover Trap:**  
+     When a computer acts up, staff have no choice but to install AnyDesk or TeamViewer and hand over complete, unrestricted screen control to external technicians—exposing confidential patient records and financial spreadsheets to unvetted third parties.
 - **Presenter Timing:** 0:30 – 1:00 (30 seconds)
 
 #### 🎙️ Speaker Script:
-> *"Consider the nurse at Kanye District Clinic. If an unverified USB flash drive is inserted into her computer, traditional antivirus might miss it if the malware is new. Proprietary zero-trust solutions like ThreatLocker exist, but they are prohibitively expensive and closed-source.  
-> On the other hand, open-source giants like Linux IMA, AppArmor, and Suricata have the power to stop it, but they require a PhD in Linux sysadmin to configure.  
-> Worse still, when something goes wrong, the nurse calls an IT contractor who demands full remote desktop control via AnyDesk. One stranger now has full access to confidential patient records.  
-> We knew there had to be a better way."*
+> *"Consider a nurse at Kanye Clinic or a teacher managing a computer lab at GSS.  
+> Traditional antivirus plays catch-up—it only catches malware it already knows about. Commercial zero-trust tools solve this by blocking everything by default, but their enterprise licenses are completely out of reach.  
+> On the other hand, open-source security software like AppArmor and Suricata are world-class, but they are trapped behind complex command-line interfaces.  
+> And when an anomaly occurs, staff panic and hand over full remote desktop control via AnyDesk to an outside contractor, instantly leaking private records.  
+> Botswana needs an open-source, affordable platform that bridges this gap."*
 
 ---
 
 ### SLIDE 3: The Solution — INSTANCES
-- **Slide Title:** Zero-Trust Made Accessible & Customizable
-- **Visual:** Graphic showing the core philosophy:
-  - `Default-Allow (Legacy Antivirus)` $\rightarrow$ *Tries to guess bad files (always playing catch-up).*
-  - `Default-Deny (INSTANCES Zero-Trust)` $\rightarrow$ *Nothing executes, reads data, or traverses networks without an explicit policy.*
-- **Key Bullet Points:**
-  - **Customizable Protection Matrix ($A_1–C_3$):** Tailored to device scale and data sensitivity.
-  - **Two Unified Workspaces:**
-    - *Threat Anticipation:* Proactive ringfencing & interactive simulation sandbox.
-    - *Threat Response:* Bounded, non-invasive evidence checklists.
-  - **Plain-Language Intelligence:** Translates low-level kernel telemetry into calm human advisories.
+- **Slide Title:** Zero-Trust Made Accessible & Actionable
+- **Visual Layout:**
+  - *Left (The Core Principle):* **Strict Default-Deny**  
+    `Nothing executes, accesses sensitive data, gains admin privileges, or traverses networks without an explicit, auditable policy.`
+  - *Right (The Two Operational Pillars):*
+    1. **Threat Anticipation:** Proactive protection profile selection, device ringfencing, and live attack simulation.
+    2. **Threat Response:** Structured, privacy-preserving evidence collection checklists that replace risky remote takeovers.
 - **Presenter Timing:** 1:00 – 1:30 (30 seconds)
 
 #### 🎙️ Speaker Script:
-> *"INSTANCES is built on one unbreakable principle: **Default-Deny**.  
-> Nothing executes, reads private databases, gains administrator privilege, or opens a network socket unless an explicit, auditable template permits it.  
-> But unlike rigid enterprise tools, INSTANCES is **customizable** to local realities. We don't force a one-size-fits-all policy. We introduce the $A_1-C_3$ Protection Matrix, matching the size of the environment with the sensitivity of the data."*
+> *"INSTANCES solves this with one uncompromising rule: **Default-Deny**.  
+> If software is not explicitly trusted, it does not run. If a USB drive is not authorized, it cannot read files. If a process tries to open a suspicious connection, it is instantly severed.  
+> But we make this intuitive through two clear pillars:  
+> First, **Threat Anticipation**, which gives users pre-configured protection profiles and an interactive playground to test policies safely.  
+> Second, **Threat Response**, which replaces dangerous remote screen-sharing with a safe, bounded evidence checklist."*
 
 ---
 
-### SLIDE 4: Pillar 1 — Threat Anticipation & The $A_1-C_3$ Matrix
-- **Slide Title:** The $A_1–C_3$ Template Matrix
-- **Visual:** The 3x3 interactive matrix graphic:
-  - *Rows 1–3 (Scale):* 1 (Individual/1–5 PCs) $\rightarrow$ 2 (School/SME 5–50 PCs) $\rightarrow$ 3 (District Clinic/Hospital 50+ PCs).
-  - *Columns A–C (Sensitivity):* A (Standard Public) $\rightarrow$ B (Confidential Business) $\rightarrow$ C (Critical Electronic Health Records).
-  - Highlighted cell: **$C_3$ District General Hospital (Primary Demo Case)**.
-- **Key Bullet Points:**
-  - **Context-Aware Hardening:** A secondary school lab (A2) needs to block gaming scripts; a clinic (C3) needs to lock down patient databases and block USB mounts.
-  - **Visual Policy Inspector:** View approved binaries, USB ringfencing, and network egress rules.
-  - **Developer JSON Code Studio:** Write custom eBPF filters, hardware USB VID/PID rules, and review workflows.
+### SLIDE 4: Threat Anticipation & The $A_1–C_3$ Protection Matrix
+- **Slide Title:** Right-Sized Security: The $A_1–C_3$ Template Matrix
+- **Visual Layout:** Clean 3×3 Archetype Matrix:
+  - **Horizontal Rows (Fleet Scale):**  
+    - Level 1: Solo Operator / Micro-Desk (1–5 Devices)  
+    - Level 2: School IT Lab / Small Business (5–50 Devices)  
+    - Level 3: District Hospital / Municipal Enterprise (50+ Devices)  
+  - **Vertical Columns (Data Sensitivity):**  
+    - Level A: Public / Standard Data (Educational media, basic browsing)  
+    - Level B: Internal Business Data (Accounting records, inventory, POS)  
+    - Level C: Regulated / Confidential Data (Electronic Health Records, National IDs)  
+  - **Highlighted Showcase:** **Archetype C3 (District Clinic / Health Post)**
+- **Key Features:**
+  - Visual policy inspector: Allowed software, USB ringfence status, and network rules.
+  - Collapsible design: Keeps the operator's workspace calm and uncluttered.
+  - Custom Policy Studio: Allows developers to export or edit clean JSON schemas.
 - **Presenter Timing:** 1:30 – 2:00 (30 seconds)
 
 #### 🎙️ Speaker Script:
-> *"Here is the heart of our proactive engine: the $A_1-C_3$ Matrix.  
-> Rows 1 to 3 represent the scale of the network — from a solo developer up to a district general hospital.  
-> Columns A to C represent data sensitivity — from public curriculum documents to highly confidential patient medical histories.  
-> Cell C3 is our clinic hero profile: it locks down USB ports, restricts network egress to verified government servers, and ensures that only certified medical software like DHIS2 or OpenMRS can ever execute."*
+> *"One size does not fit all. A primary school computer lab should not have the same restrictions as an operating theater.  
+> That is why we designed the **$A_1-C_3$ Protection Matrix**.  
+> Rows represent scale—from a solo practitioner up to an entire district hospital. Columns represent sensitivity—from standard public browsing up to confidential patient histories.  
+> In our app, selecting an organization—like a rural health clinic—instantly applies **Archetype C3**: locking down USB thumb drives, ringfencing the patient database, and permitting only approved medical applications."*
 
 ---
 
-### SLIDE 5: Pillar 2 — Threat Response (The Bounded Evidence Revolution)
-- **Slide Title:** Safe Response Without Remote Takeover
-- **Visual:** Workflow diagram:
-  - `Alert Occurs` $\rightarrow$ `Step 1: Workstation ID` $\rightarrow$ `Step 2: Auto-Syslog Diagnostic` $\rightarrow$ `Step 3: Staff Notes/Photo` $\rightarrow$ `Step 4: Sealed SHA-256 Bundle` $\rightarrow$ `Reviewer Queue`.
-- **Key Bullet Points:**
-  - **Replaces AnyDesk/TeamViewer:** Staff never hand over live screen control.
-  - **Privacy-Preserving:** Only diagnostic security logs are extracted; zero patient health records leave the workstation.
-  - **Cryptographically Sealed:** Every submission generates an immutable SHA-256 hash for forensic integrity and non-repudiation.
-- **Presenter Timing:** 2:00 – 2:30 (30 seconds)
-
-#### 🎙️ Speaker Script:
-> *"When a security event occurs, INSTANCES changes the game with our **Threat Response Workspace**.  
-> Instead of handing over remote screen control, the clinic nurse is guided through a **Bounded Evidence Checklist**. In four simple steps, the app verifies the workstation, automatically extracts privacy-preserving diagnostic logs, captures notes, and signs the package with a cryptographic SHA-256 seal.  
-> The IT reviewer in Gaborone receives the exact diagnostic proof they need to resolve the incident, while confidential patient files remain completely untouched."*
-
----
-
-### SLIDE 6: Live Product Demonstration (The 60-Second Golden Demo)
-- **Slide Title:** Live Demonstration: Zero-Trust in Action
-- **Visual:** Switch screen directly to live app: **`https://instances-bw.vercel.app`**
-- **Live Demo Choreography:**
-  1. *Screen 1 (Landing & Login):* Click **"Proceed to Login"** $\rightarrow$ Click **"Enter Threat Anticipation Workspace"**.
-  2. *Screen 2 (Matrix):* Show the $A_1-C_3$ grid; click **$C_3$ Clinic Shield**.
-  3. *Screen 3 (Playground):* Select *"Unauthorized USB Thumb Drive Patient Export"* $\rightarrow$ Click **"Trigger Simulation Now"**.
-  4. *Screen 4 (Verdict):* Show instant **BLOCKED** badge. Toggle between **Plain Language** (*"Removable USB storage devices are blocked by Profile C3..."*) and **Technical Telemetry** (*Suricata SID / AppArmor udev block*).
-  5. *Screen 5 (Response Handoff):* Click **"Escalate to Threat Response Case"** to show the bounded checklist and reviewer resolution.
-- **Presenter Timing:** 2:30 – 3:30 (60 seconds)
+### SLIDE 5: Interactive Threat Playground (Live 60-Second Demo)
+- **Slide Title:** Test Defenses Safely Before Deployment
+- **Visuals & Live Demo Choreography:**
+  - *Step 1:* Switch to live app at **`instances-bw.vercel.app`**.
+  - *Step 2:* Open **Gateway / Login** $\rightarrow$ Click **"Protect Clinic (Archetype C3)"**.
+  - *Step 3:* View the calm Anticipation dashboard with the collapsed matrix and active shield indicator.
+  - *Step 4:* In the **Threat Simulation Playground**, select *"Unauthorized USB Patient Record Exfiltration"*.
+  - *Step 5:* Click **"Trigger Simulation Now"**.
+  - *Step 6:* Instant **BLOCKED** verdict appears in under 600ms.
+  - *Step 7:* Highlight the **Plain Language Explanation** (*"Removable USB storage is blocked to safeguard patient health records. No staff action required."*) and toggle to **Technical Telemetry** for the jury.
+- **Presenter Timing:** 2:00 – 2:45 (45 seconds)
 
 #### 🎙️ Speaker Script (During Live Demo):
-> *(Switch to browser at instances-bw.vercel.app)*  
-> *"Let's see it live. We enter the Threat Anticipation workspace and inspect our C3 Clinic Profile.  
-> Now, let's step into the **Instances Playground**. A rogue USB stick is plugged into Consulting Room 4 attempting to copy our patient database. We click 'Trigger Simulation'.  
-> Instantly: **BLOCKED**.  
-> Notice what happens next: for the clinic nurse, the system explains in plain English: 'Removable USB drives are blocked to protect patient records. No action needed.' But for our cybersecurity judges, a single click reveals the technical telemetry — our udev storage boundary and AppArmor kernel intercept.  
-> With one more click, we can escalate this directly into our Threat Response workflow."*
+> *(Demonstrating live in browser)*  
+> *"Let's see INSTANCES in action.  
+> We log in and select 'Rural Health Clinic'. The system immediately deploys our C3 protection shield.  
+> Now we enter the **Threat Simulation Playground**. Imagine someone plugs an unknown USB stick into a consulting room terminal and attempts to copy the patient records database.  
+> We click 'Trigger Simulation'. Instantly: **BLOCKED**.  
+> Look at the explanation: For the clinic nurse, it explains in calm, reassuring plain English: 'Removable USB storage is blocked by Profile C3. The system kept your data safe.'  
+> But for our technical judges, a single click opens the technical telemetry, showing the exact open-source rule match and kernel interception."*
 
 ---
 
-### SLIDE 7: Open-Source Engine Subsystems (Under the Hood)
-- **Slide Title:** How Open-Source Powers Track 1
-- **Visual:** Clean 4-quadrant architectural mapping table:
-  - **Allow-Listing:** Linux IMA (Integrity Measurement Architecture) + AppArmor + Windows AppLocker.
-  - **Storage & Privilege Ringfencing:** udev hardware rules + SELinux strict policies.
-  - **Network Boundary:** Suricata 7.0 IPS + OpenSnitch application firewall.
-  - **Telemetry & Digital Forensics:** Wazuh 4.7 SIEM + osquery + Velociraptor VQL.
-- **Key Bullet Points:**
-  - Proven enterprise zero-trust principles realized 100% through trusted open-source signals.
-  - Zero proprietary licensing fees.
-  - Full data sovereignty for Botswana.
-- **Presenter Timing:** 3:30 – 4:00 (30 seconds)
+### SLIDE 6: Threat Response & The Bounded Evidence Revolution
+- **Slide Title:** Safe Incident Triage (Replacing AnyDesk / TeamViewer)
+- **Visual Layout:** 4-Step Guided Evidence Checklist Diagram:
+  - `Step 1: Workstation Verification` $\rightarrow$ Confirms device ID and timestamp.
+  - `Step 2: Diagnostic Log Pull` $\rightarrow$ Extracts only system security events (never user files).
+  - `Step 3: Staff Context & Observations` $\rightarrow$ Nurse inputs what happened or attaches a photo.
+  - `Step 4: Sealed Cryptographic Bundle` $\rightarrow$ Signs the package with a tamper-evident SHA-256 hash.
+- **Key Benefits:**
+  - **No Remote Takeover:** Contractors never gain full screen or file system access.
+  - **Privacy-Preserving:** Only diagnostic evidence leaves the machine; patient records stay sealed.
+  - **Auditable Accountability:** Full timeline showing submission, review notes, and policy resolution.
+- **Presenter Timing:** 2:45 – 3:15 (30 seconds)
 
 #### 🎙️ Speaker Script:
-> *"How do we achieve this without commercial software? By orchestrating the world's most powerful open-source security primitives.  
-> For execution control, we harness Linux IMA and AppArmor. For storage boundaries, we deploy udev kernel rules. For network micro-segmentation, Suricata 7.0 drops rogue egress connections. And for unified auditing, Wazuh and Velociraptor provide tamper-evident telemetry.  
-> INSTANCES is the unifying, human-centric orchestration layer that makes these complex tools work together seamlessly."*
+> *"What happens when a suspicious event occurs?  
+> Instead of handing over remote desktop access to a stranger, INSTANCES guides staff through a **Bounded Evidence Checklist**.  
+> In four easy steps, the operator verifies the machine, lets the system pull diagnostic logs, adds a quick note, and submits a cryptographically sealed SHA-256 package.  
+> The IT reviewer in Gaborone gets the exact forensic logs required to remediate the issue, while confidential patient files remain completely safe and untouched on the local computer."*
 
 ---
 
-### SLIDE 8: Track 2 — The Instances Community & Future Horizon
-- **Slide Title:** Track 2: Community Hub & The Next Frontier
-- **Visual:** Screenshot / graphic of the Track 2 Hub:
-  - *Instances Community Leaderboard:* Templates ranked by **Utility Score (e.g. 98/100)**, downloads, and upvotes.
-  - *Advanced Capabilities:*
-    - **Parent-Child Process Ringfencing:** Blocking Office apps from launching PowerShell.
-    - **Just-In-Time (JIT) Elevation Control:** 15-minute temporary admin tokens instead of permanent root.
-    - **Operational Mode Switching:** Learning $\leftrightarrow$ Secured $\leftrightarrow$ Maintenance.
-- **Key Bullet Points:**
-  - **Public Template Marketplace:** Developers across Botswana can publish, audit, and share hardened profiles.
-  - **Utility Ranking System:** Community-vetted scores based on security coverage and battle-tested validation.
-  - **Extending Zero-Trust:** Going beyond standard baselines to eliminate process hollowing and standing privileges.
-- **Presenter Timing:** 4:00 – 4:30 (30 seconds)
+### SLIDE 7: Technical Architecture & Open-Source Engine Mapping
+- **Slide Title:** Powered by Proven Open-Source Security Engines
+- **Visual Layout:** Architectural Mapping Table:
+
+| Capability | Open-Source Security Engine | Role in INSTANCES |
+| :--- | :--- | :--- |
+| **Binary Execution Control** | **Linux IMA** (Integrity Measurement Architecture) + **AppArmor** / **Windows AppLocker** | Cryptographic hash allow-listing; blocks unapproved `.exe` / ELF binaries. |
+| **Storage & Privilege Ringfencing** | **udev rules** + **SELinux** / **Polkit** | Blocks unauthorized USB mass storage mounts and prevents privilege escalation. |
+| **Network Boundary & Egress** | **Suricata 7.0 IPS** + **OpenSnitch** / **nftables** | Intercepts unauthorized outbound connections and kills reverse shells. |
+| **Telemetry & Tamper-Evident Auditing** | **Wazuh SIEM** + **osquery** + **Velociraptor** | Lightweight endpoint telemetry, file integrity monitoring, and immutable log trails. |
+| **Vulnerability & Code Auditing** | **Trivy** + **OWASP ZAP** | Pre-execution container and dependency vulnerability verification. |
+
+- **Key Architectural Takeaway:** INSTANCES is the **unifying, human-centric orchestration layer** that translates high-level trust profiles into coordinated open-source enforcement.
+- **Presenter Timing:** 3:15 – 3:45 (30 seconds)
 
 #### 🎙️ Speaker Script:
-> *"Today's MVP is Track 1. But our vision extends to **Track 2: The Instances Community**.  
-> We have built an open template marketplace where developers across Botswana can create custom protection profiles, publish them, and compete on our **Utility Ranking Leaderboard**.  
-> Furthermore, Track 2 incorporates extended capabilities: **Parent-Child Ringfencing** that prevents Word documents from spawning command shells, **Just-In-Time Elevation** giving temporary 15-minute admin tokens, and **Operational Mode Switching** for fleet lifecycles."*
+> *"How do we deliver enterprise-grade defense without proprietary licenses? By orchestrating the best open-source security engines on earth.  
+> For execution control, we utilize Linux IMA and AppArmor. For storage ringfencing, udev and SELinux isolate removable media. For network boundaries, Suricata 7.0 terminates rogue data egress. And for auditable telemetry, Wazuh and Velociraptor provide tamper-evident event trails.  
+> INSTANCES harmonizes these complex tools into one cohesive, accessible interface."*
 
 ---
 
-### SLIDE 9: Impact, Feasibility & Hackathon Alignment
-- **Slide Title:** Empowering Botswana's Digital Future
-- **Visual:** Map of Botswana with impact nodes (Gaborone, Kanye, Francistown, Maun) highlighting:
-  - *Clinics & Hospitals (Healthcare Track Synergy)*
-  - *Schools & Community Centers (Education)*
-  - *Local Councils & SMEs (Economic Protection)*
-- **Key Bullet Points:**
-  - **Track 01 Alignment:** Directly strengthens digital defense and safeguards critical community systems.
-  - **Zero Hardware Overhead:** Runs on existing computers; no expensive proprietary appliances needed.
-  - **National Cyber Sovereignty:** Botswana controls its own security profiles, evidence data, and community templates.
-- **Presenter Timing:** 4:30 – 4:50 (20 seconds)
+### SLIDE 8: Production Operating System Integration Map
+- **Slide Title:** Production OS Roadmap & Integration Boundaries
+- **Visual Layout:** Clean deployment flow diagram for native environments:
+  - **Linux Endpoints (Debian / Ubuntu / Fedora):**  
+    - Kernel IMA/EVM enforce file signature validation.  
+    - AppArmor profiles restrict application capabilities (e.g. libreoffice cannot spawn `/bin/sh`).  
+    - nftables drops unapproved network sockets.
+  - **Windows Workstations (Windows 10 / 11 / Server):**  
+    - Windows Defender Application Control (WDAC) & AppLocker enforce hash-based allow-lists.  
+    - Windows Event Forwarding (WEF) streams security events to the central review queue.
+  - **macOS Terminals:**  
+    - Apple Endpoint Security Framework (ESF) and System Extensions monitor process creation and disk mounts.
+  - **Security Boundary Guarantee:**  
+    - Uses signed, least-privilege daemon agents. Web requests *never* execute arbitrary shell commands directly.
+- **Presenter Timing:** 3:45 – 4:15 (30 seconds)
 
 #### 🎙️ Speaker Script:
-> *"INSTANCES is not just a coding exercise; it is an economic and national defense solution.  
-> By removing license fees and replacing complex CLIs with intuitive plain-language workflows, we enable every rural clinic, municipal office, and secondary school to defend itself against modern cyber threats.  
-> This is digital security built by Botswana, for Botswana, on open-source foundations."*
+> *"Our modular design provides a direct path to production deployment across operating systems.  
+> On Linux, our profiles compile into native IMA and AppArmor policies. On Windows, they map to Windows Defender Application Control and AppLocker. On macOS, they connect via the Endpoint Security Framework.  
+> Every adapter operates under strict least-privilege boundaries with cryptographically signed local daemons, ensuring the web interface never runs arbitrary OS commands."*
 
 ---
 
-### SLIDE 10: Conclusion & Call to Action
-- **Slide Title:** INSTANCES: Defend Proactively. Respond Accountably.
-- **Visual:** Bold closing card:
-  - Live URL: **`https://instances-bw.vercel.app`**
-  - Team Name & University of Botswana / UniPod Affiliation
-  - "Thank You / Questions & Answers"
-- **Presenter Timing:** 4:50 – 5:00 (10 seconds)
+### SLIDE 9: The Future Horizon: Botswana Community Ecosystem
+- **Slide Title:** Future Horizon: Community Templates & Advanced Controls
+- **Visual Layout:** Two visionary pillars:
+  1. **Community Template Marketplace & Leaderboard:**  
+     - A nationwide repository where local developers, university researchers, and system administrators publish custom security profiles.  
+     - **Utility Scores (e.g. 98/100):** Community-driven ranking based on policy strictness, validation testing, and real-world utility.
+  2. **Advanced Zero-Trust Controls:**  
+     - **Parent-Child Process Ringfencing:** Prevents trusted productivity tools (Word, PDF readers) from spawning command interpreters (`powershell.exe`, `bash`).  
+     - **Just-In-Time (JIT) Elevation:** Eliminates permanent administrator accounts; provides 15-minute temporary elevation tokens for verified maintenance tasks.  
+     - **Operational Mode Switching:** Fleet-wide transition between *Learning Mode* (passive baselining), *Secured Mode* (default-deny), and *Maintenance Mode*.
+- **Presenter Timing:** 4:15 – 4:45 (30 seconds)
 
 #### 🎙️ Speaker Script:
-> *"INSTANCES is live right now at **instances-bw.vercel.app**.  
-> We invite the judges to test our matrix, simulate attacks in our playground, and explore our community hub.  
-> Thank you, and we look forward to your questions!"*
+> *"Looking ahead, INSTANCES is designed to foster a self-sustaining cybersecurity ecosystem in Botswana.  
+> We envision a **Community Template Marketplace** where local engineers and students publish, audit, and rank security templates tailored to local software and municipal needs, rated by an objective **Utility Score**.  
+> Furthermore, we are designing advanced zero-trust controls: **Parent-Child Ringfencing** to eliminate macro exploits, **Just-In-Time Elevation** to abolish permanent root passwords, and **Fleet Mode Switching** to make onboarding effortless."*
 
 ---
 
-## 🛡️ Judge Q&A Cheat Sheet (Bulletproof Answers)
+### SLIDE 10: Conclusion, Impact & Project Links
+- **Slide Title:** Defend Proactively. Respond Accountably.
+- **Visual Layout:**
+  - Summary of Value:
+    - ✅ **100% Open Source & Zero Licensing Fees**
+    - ✅ **Tailored to Botswana's Public & Private Sectors**
+    - ✅ **Human-First Plain Language Usability**
+    - ✅ **Safe Evidence Triage Without Remote Takeover**
+  - **Consolidated Project Links Box:**
+    - 🌐 **Live Web Application:** [https://instances-bw.vercel.app](https://instances-bw.vercel.app)
+    - 💻 **GitHub Source Code:** [https://github.com/luxraye/ODC.git](https://github.com/luxraye/ODC.git)
+    - 📖 **Open Source Community Botswana:** [oscbotswana.co.bw](https://oscbotswana.co.bw)
+    - 🏆 **Hackathon Track:** Track 01 — Defence & Security | Orange Digital Center Botswana
+- **Presenter Timing:** 4:45 – 5:00 (15 seconds)
 
-### Q1: "How is this different from just installing Wazuh, Suricata, or AppArmor on a machine?"
-> **Answer:** *"Wazuh, Suricata, and AppArmor are fantastic engines, but they are completely siloed and inaccessible to non-technical users. A clinic nurse or school principal cannot write AppArmor abstractions or configure Suricata rulesets.  
-> INSTANCES is the **orchestration, customization, and translation layer**. It translates high-level organizational profiles (like our C3 Clinic Profile) into unified zero-trust enforcement across execution, storage, and network boundaries, and gives operators plain-language insights rather than a terrifying wall of raw alerts."*
-
-### Q2: "What prevents a malicious developer from publishing a rogue template on the Track 2 Community Hub?"
-> **Answer:** *"Every community template undergoes our **Utility & Verification Pipeline**:  
-> 1. Syntactic validation against our strict JSON schema.  
-> 2. Automated behavior testing in our Track 2 Detonation Sandbox.  
-> 3. A community Utility Ranking score that requires cryptographic author verification before a profile can be marked with our 'Verified' badge.  
-> Furthermore, users can inspect the complete JSON policy in our Code Studio before deploying."*
-
-### Q3: "How does the Bounded Evidence Checklist prevent data leaks if the computer is already compromised?"
-> **Answer:** *"Traditional incident response relies on remote desktop tools like AnyDesk or TeamViewer. That means the remote technician has unrestricted read access to the entire file system — including patient health records.  
-> Our Bounded Evidence Collection runs locally as a sandboxed instance. It extracts **only** pre-defined security diagnostic audit logs (such as the specific kernel block event) and staff notes, seals the bundle with a SHA-256 cryptographic hash, and routes it to verified reviewers. Private medical records never leave the local storage boundary."*
-
-### Q4: "Is this scalable from a 5-PC school lab to an entire hospital?"
-> **Answer:** *"Yes! That is the core purpose of our $A_1-C_3$ Matrix. Scale 1 is designed for individual consultants and micro-offices with 1 to 5 PCs. Scale 2 covers school labs and SMEs with 5 to 50 terminals. Scale 3 is engineered for enterprise hospitals and municipal district networks with hundreds of nodes."*
+#### 🎙️ Speaker Script:
+> *"INSTANCES proves that cybersecurity does not have to be expensive, intimidating, or foreign.  
+> By uniting world-class open-source engines under a clean, human-centered interface, we empower every clinic nurse, teacher, and entrepreneur in Botswana to take control of their digital sovereignty.  
+> Our live prototype is available right now at **instances-bw.vercel.app**, and our complete codebase is open on GitHub.  
+> Thank you, and we welcome your questions!"*
 
 ---
 
-## 📋 Hackathon Presentation Checklist
+## 📋 Hackathon 12-Module Checklist Cross-Reference
 
-- [ ] Open **`https://instances-bw.vercel.app`** in your browser beforehand in a dedicated tab.
-- [ ] Have the browser pre-set to full screen (`F11`).
-- [ ] Test the 1-click playground simulation in advance to ensure instant loading.
-- [ ] Keep a backup local server running on `http://localhost:5173` just in case venue Wi-Fi fluctuates.
-- [ ] Rehearse the 3-minute pitch once with a timer!
+This table maps each of the 12 required build modules from the official hackathon specification directly to its presentation coverage:
+
+| Checklist Step | Module Name | Implementation in INSTANCES | Slide Coverage |
+| :--- | :--- | :--- | :--- |
+| **Step 01** | **Landing and Login** | Clean hero tagline; 30-second plain-language product explanation; organization selection (Clinic, School, SME, Reviewer). | Slide 1 & Slide 5 |
+| **Step 02** | **Roles and Navigation** | Distinct Anticipation Lead vs. Response Triage vs. Admin routes; clean navigation header with zero enterprise clutter. | Slide 3 & Slide 5 |
+| **Step 03** | **Threat Anticipation Dashboard** | Calm security center with 98.4% protection level, protected nodes summary, and active shield indicators. | Slide 4 & Slide 5 |
+| **Step 04** | **A1–C3 Template Matrix** | 3×3 matrix mapping Fleet Scale (1–3) to Data Sensitivity (A–C); collapsible design to keep workspace clean. | Slide 4 |
+| **Step 05** | **Template Details and Builder** | Profile inspector for allowed binaries, USB storage, network egress; Developer JSON Code Studio with validation. | Slide 4 |
+| **Step 06** | **Instances Playground** | 1-click threat simulation sandbox; instant Allow/Block decision; plain-English explanation + technical telemetry. | Slide 5 |
+| **Step 07** | **Threat Scenarios and Signals** | 4 pre-seeded realistic attacks mapped to open-source engines (Linux IMA, AppArmor, udev, Suricata, Wazuh, osquery). | Slide 5 & Slide 7 |
+| **Step 08** | **Threat Response Dashboard** | Clear, non-technical incident queue for staff; urgent action prompts without requiring external IT calls. | Slide 6 |
+| **Step 09** | **Evidence Collection Instance** | 4-step bounded checklist replacing AnyDesk/TeamViewer; synthetic diagnostic pull and cryptographic SHA-256 seal. | Slide 6 |
+| **Step 10** | **Reviewer and Audit Workflow** | Reviewer triage desk; status lifecycle (`Under Review` $\rightarrow$ `Policy Remediated` $\rightarrow$ `Resolved`); immutable audit log. | Slide 6 |
+| **Step 11** | **Safety, Data & Explanation Layer** | Fully synthetic safe demo telemetry; zero risk to host machine; dual plain-English/technical explanations; 1-click reset. | Slide 5 & Slide 8 |
+| **Step 12** | **Production OS Integration Map** | Comprehensive documentation of native adapters for Linux (IMA/AppArmor), Windows (WDAC/AppLocker), and macOS (ESF). | Slide 8 |
+
+---
+
+## 🛡️ Judge Q&A Anticipation Guide (Bulletproof Responses)
+
+### Q1: "Isn't default-deny too disruptive for ordinary non-technical workers?"
+> **Answer:**  
+> *"That is precisely why traditional enterprise zero-trust fails in small organizations—it requires an IT admin to manually approve every single binary.  
+> INSTANCES solves this through our **$A_1-C_3$ Matrix archetypes**. Instead of starting from scratch, organizations inherit curated, pre-tested application profiles. For example, Profile A2 for schools already whitelists standard web browsers and office suites. Users only experience blocks when unvetted, unknown executables or unauthorized USB media attempt to interact with the system."*
+
+### Q2: "Why not just let the IT contractor use AnyDesk to fix the computer?"
+> **Answer:**  
+> *"AnyDesk and TeamViewer grant full interactive desktop control. That means the remote technician has unrestricted read and write access to the entire disk—including confidential medical registers, financial records, and personal passwords.  
+> Furthermore, compromised remote desktop credentials are one of the top attack vectors globally.  
+> Our **Bounded Evidence Checklist** flips the paradigm: it extracts *only* the specific system diagnostic event logs needed to identify the malfunction, packages them into an encrypted, SHA-256 sealed bundle, and transmits them securely. Zero patient data ever leaves the clinic workstation."*
+
+### Q3: "How does the web application interact with actual operating systems in production?"
+> **Answer:**  
+> *"In this hackathon prototype, we built an interactive, self-contained simulation layer with synthetic telemetry so judges can test every feature safely without executing live root exploits on their machines.  
+> For production deployment (documented in our Step 12 OS Integration Map), INSTANCES pairs with a lightweight, cryptographically signed local daemon. The daemon compiles our JSON protection templates directly into native kernel configurations: **Linux IMA policies and AppArmor abstractions** on Linux, and **WDAC XML policies** on Windows. The web interface acts strictly as the policy orchestration and evidence review layer."*
+
+### Q4: "What makes this genuinely open-source rather than just another commercial SaaS clone?"
+> **Answer:**  
+> *"INSTANCES is built 100% on open-source foundations. We do not use proprietary threat feeds, closed agent binaries, or hidden licensing tiers.  
+> Every security signal we consume comes from recognized open-source engines: Linux IMA, AppArmor, Suricata, Wazuh, and osquery. Our code is published under the open-source license on GitHub, giving Botswana complete technological sovereignty over its security infrastructure."*
