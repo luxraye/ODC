@@ -19,16 +19,14 @@ export const LandingPage: React.FC = () => {
         </div>
 
         <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white max-w-4xl mx-auto leading-tight">
-          Zero-Trust Cyber Protection <br className="hidden sm:inline" />
+          Cyber Defense Made Simple. <br className="hidden sm:inline" />
           <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">
-            Scaled for Every Community.
+            Protection That Fits You.
           </span>
         </h1>
 
-        <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          A dedicated, customizable zero-trust security platform powered by open-source signals. 
-          <strong> Nothing executes, reads sensitive databases, gains privilege, or traverses networks </strong> 
-          unless an explicit policy permits it.
+        <p className="mt-5 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-sans">
+          Simple, customizable cyber protection that adopts and scales to your needs — without the enterprise price tag or technical headache.
         </p>
 
         {/* Primary Action Buttons */}
@@ -37,7 +35,7 @@ export const LandingPage: React.FC = () => {
             onClick={() => setRole('login')}
             className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-bold text-sm flex items-center justify-center gap-2.5 transition-all shadow-xl shadow-emerald-500/25 hover:scale-[1.02]"
           >
-            <span>Proceed to Login & Role Selection</span>
+            <span>Get Started / Sign In</span>
             <ArrowRight className="w-4 h-4" />
           </button>
 
@@ -54,13 +52,13 @@ export const LandingPage: React.FC = () => {
         {/* Real-World Context Badges */}
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-xs font-mono text-slate-400">
           <span className="px-3.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center gap-2">
-            <HeartPulse className="w-3.5 h-3.5 text-rose-400" /> Rural Clinics & Hospitals (Kanye / Mochudi)
+            <HeartPulse className="w-3.5 h-3.5 text-rose-400" /> Rural Clinics & Health Posts
           </span>
           <span className="px-3.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center gap-2">
-            <Users className="w-3.5 h-3.5 text-cyan-400" /> Schools & Public IT Labs (GSS)
+            <Users className="w-3.5 h-3.5 text-cyan-400" /> Primary & Secondary School IT Labs
           </span>
           <span className="px-3.5 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center gap-2">
-            <Server className="w-3.5 h-3.5 text-amber-400" /> Municipal Councils & Local SMEs
+            <Server className="w-3.5 h-3.5 text-amber-400" /> Local Businesses & Municipal Councils
           </span>
         </div>
       </section>
