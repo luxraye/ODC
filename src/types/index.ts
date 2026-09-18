@@ -1,4 +1,4 @@
-export type Role = 'landing' | 'login' | 'anticipation' | 'response' | 'admin';
+export type Role = 'landing' | 'login' | 'anticipation' | 'response' | 'admin' | 'roadmap';
 
 export type ScaleLevel = 1 | 2 | 3; // 1: Individual, 2: School/Business, 3: Clinic/Enterprise
 export type SensitivityLevel = 'A' | 'B' | 'C'; // A: Standard, B: Confidential, C: Regulated/Medical

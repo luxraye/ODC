@@ -40,7 +40,7 @@ interface AppContextType {
   resetToDefaults: () => void;
   showAdminAuthModal: boolean;
   setShowAdminAuthModal: (show: boolean) => void;
-  // Extended Capabilities
+  // Track 2 Additions
   communityTemplates: CommunityTemplate[];
   upvoteCommunityTemplate: (id: string) => void;
   publishToCommunity: (template: CommunityTemplate) => void;
@@ -81,7 +81,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const [showAdminAuthModal, setShowAdminAuthModal] = useState<boolean>(false);
 
-  // Community & Advanced Capabilities
+  // Track 2: Community & Advanced Capabilities
   const [communityTemplates, setCommunityTemplates] = useState<CommunityTemplate[]>(() => {
     const saved = localStorage.getItem('instances_community');
     return saved ? JSON.parse(saved) : COMMUNITY_TEMPLATES;
@@ -202,7 +202,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     setAuditLogs((prev) => [newEntry, ...prev]);
   };
 
-  // Community Actions
+  // Track 2 Actions
   const upvoteCommunityTemplate = (id: string) => {
     setCommunityTemplates((prev) =>
       prev.map((t) => {
@@ -221,7 +221,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     setCommunityTemplates((prev) => [template, ...prev]);
     addAuditLog(
       'COMMUNITY_TEMPLATE_PUBLISHED',
-      `Published new template "${template.title}" to Instances Community Hub`,
+      `Published new template "${template.title}" to Instances Community Hub (Track 2)`,
       'success'
     );
   };
@@ -304,7 +304,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         resetToDefaults,
         showAdminAuthModal,
         setShowAdminAuthModal,
-        // Community & Elevation
+        // Track 2
         communityTemplates,
         upvoteCommunityTemplate,
         publishToCommunity,
